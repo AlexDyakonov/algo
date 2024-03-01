@@ -1,7 +1,3 @@
-# Created by https://www.toptal.com/developers/gitignore/api/c++,cmake
-# Edit at https://www.toptal.com/developers/gitignore?templates=c++,cmake
-
-### C++ ###
 # Prerequisites
 *.d
 
@@ -35,52 +31,40 @@
 *.out
 *.app
 
-### CMake ###
-CMakeLists.txt.user
+# CMake
 CMakeCache.txt
-CMakeFiles
-CMakeScripts
-Testing
-Makefile
+CMakeFiles/
 cmake_install.cmake
-install_manifest.txt
-compile_commands.json
-CTestTestfile.cmake
-_deps
+Makefile
+CMakeScripts/
 
-### CMake Patch ###
-# External projects
-*-prefix/
+# build
+build/
 
-# Prerequisites
-*.d
+# Settings and other
+*.user
+*.user.*
+*.suo
+*.ide
+.vs/
+.vscode/
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+# logs
+*.log
 
-# Precompiled Headers
-*.gch
-*.pch
+# CLion, IDE
+.idea/
+*.iml
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+# tmp files
+*.swp
+*.swo
+*~
 
-# Fortran module files
-*.mod
-*.smod
+# Qt files
+moc_*
+qrc_*
+ui_*
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+# env
+.env
